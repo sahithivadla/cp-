@@ -7,6 +7,10 @@
 
 def islegaltriangle(s1, s2, s3):
 	# your code goes here
-	l.append(s1,s2,s3)
+	l.append(s1)
+	l.append(s2)
+	l.append(s3)
+
+
 
 	pass
