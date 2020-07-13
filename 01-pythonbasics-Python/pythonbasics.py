@@ -8,6 +8,6 @@
 
 def show_excitement():
     # Your code goes here!
-    str= "show_excitement"
-    return str*5 + " "
+    str= "I am super excited for this course! "
+    return str*5
     pass
