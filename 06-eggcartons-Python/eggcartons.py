@@ -6,8 +6,8 @@
 
 def fun_eggcartons(eggs):
 	# your code goes here
-	if(m%12 == 0):
+	if(eggs%12 == 0):
 		return m//12
 	else:
-		return (m//12)+1
+		return (eggs//12)+1
 	return 1
