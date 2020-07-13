@@ -7,6 +7,8 @@
 
 def handtodice(hand):
 	# your code goes here
-	l = list(str(hand))
-	return tuple(l)
+	l = list(map(int,str(hand)))
+	return(tuple(l))
+
+
 
