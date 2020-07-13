@@ -13,4 +13,11 @@
 
 def dicetoorderedhand(a, b, c):
 	# your code goes here
-	pass
+	l=[]
+	l.append(a)
+	l.append(b)
+	l.append(c)
+
+
+
+
