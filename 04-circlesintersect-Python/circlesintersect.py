@@ -7,7 +7,7 @@
 import math
 def fun_circlesintersect(x1, y1, r1, x2, y2, r2):
 	# your code goes here
-	d = math.sqrt((x2-x1)**2 + (y2-y1)**2)
+	d = (x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2)
 	r = (r1+r2)**2
 	if(d<r):
 		return True
