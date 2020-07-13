@@ -10,6 +10,8 @@ def fun_ismultiple(m, n):
 		return False
 	elif (n==0 and m==0):
 		return 	True
+	elif(m==0 and n!=0):
+		return True
 	else:
 		if(abs(m)%abs(n)==0):
 			return True
