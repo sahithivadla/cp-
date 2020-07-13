@@ -8,4 +8,6 @@
 
 def show_excitement():
     # Your code goes here!
+    str= "show_excitement"
+    return str*5 + " "
     pass
