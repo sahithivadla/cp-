@@ -11,8 +11,8 @@ def fun_nearestbusstop(street):
 
 	c= street -(street%8)
 	c1 =(street+8) - (street%8)
-	if(abs(street-c) < abs(c1-street)):
+	if(abs(street-c) <= abs(c1-street)):
 		return abs(street-c)
 	else:
-		return 	abs(c1-street)
+		return abs(c1-street)
 
