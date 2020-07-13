@@ -17,7 +17,8 @@ def dicetoorderedhand(a, b, c):
 	l.append(a)
 	l.append(b)
 	l.append(c)
-
+	l.sort()
+	return ''.join(l)
 
 
 
