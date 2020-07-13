@@ -14,4 +14,11 @@ def fun_getinrange(x, bound1, bound2):
 	else:
 		l=bound2
 		g=bound1
+
+	if(l<x and x<g):
+		return x
+	elif(x<l):
+		return l
+	elif(x>g):
+		return g
 	return -1
