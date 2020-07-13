@@ -10,6 +10,11 @@ def islegaltriangle(s1, s2, s3):
 	l.append(s1)
 	l.append(s2)
 	l.append(s3)
+	l.sort()
+	if(l[0]+l[1]>l[2]):
+		return True
+	else:
+		return False
 
 
 
