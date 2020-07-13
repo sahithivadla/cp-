@@ -58,7 +58,7 @@ def playstep2(hand, dice):
 		h = str(hand)[1]+str(hand)[2]+d
 		l = list(map(int,h))
 		l.sort(reverse=True)
-		d= str(dice)[-2]+str(dice)[-1]
+		d= str(dice)[0]+str(dice)[1]
 		h = ''.join(map(str,l))
 		print(h)
 		s.append(int(h))
