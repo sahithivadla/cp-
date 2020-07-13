@@ -7,5 +7,5 @@
 def fun_distance(x1, y1, x2, y2):
 	# your code goes here
 	m =0
-	m =(y2-y1)//(x2-x1)
+	m =(y2-y1)/(x2-x1)
 	return m
