@@ -11,5 +11,8 @@ def fun_ismultiple(m, n):
 	elif (n==0 and m==0):
 		return 	True
 	else:
-		return True
+		if(abs(m)%abs(n)==0):
+			return True
+		else:
+			return False
 	return False # replace with your solution
