@@ -30,11 +30,11 @@
 
 def playstep2(hand, dice):
 	# your code goes here
-	s =()
-	if(dice == 4):
+	s =[]
+	if(len(str(dice)) == 4):
 		d = str(dice)[-1]+str(dice)[-2]
 		h = str(hand)[0]+d
-		h.sort(reverse=True)
+		h[::-1]
 		s.append(int(h))
 		s.append(int(d))
 
@@ -42,10 +42,10 @@ def playstep2(hand, dice):
 	else:
 		d = str(dice)[-1]
 		h = str(hand)[1]+str(hand)[2]+d
-		h.sort(reverse=True)
+		h[::-1]
 		s.append(int(h))
 		s.append(int(d))
 
-	return s
+	return tuple(s)
 
 
