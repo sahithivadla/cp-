@@ -7,4 +7,5 @@
 
 def handtodice(hand):
 	# your code goes here
-	pass
+	l = list(str(hand))
+
