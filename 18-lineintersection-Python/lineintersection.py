@@ -12,6 +12,6 @@ def lineintersection(m1, b1, m2, b2):
 
 	A = np.array([[m1, 1], [m2, 1]])
 	B = np.array([[b1], [b2]])
-	print(np.linalg.inv(A) @ B)
+	print(np.linalg.inv(A) )
 
 
