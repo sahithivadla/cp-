@@ -31,21 +31,42 @@
 def playstep2(hand, dice):
 	# your code goes here
 	s =[]
+	l=[]
 	if(len(str(dice)) == 4):
-		d = str(dice)[-1]+str(dice)[-2]
-		h = str(hand)[0]+d
-		h[::-1]
+		d = str(dice)[0]+str(dice)[1]
+		h = str(hand)[0]+str(dice)[-1]+str(dice)[-2]
+		l = list(map(int,h))
+		l.sort(reverse=True)
+		h = ''.join(map(str,l))
 		s.append(int(h))
 		s.append(int(d))
 
+
+	elif(len(str(dice)) == 2 and len(str(hand))==3):
+		d = str(dice)[-1]
+		h = str(hand)[1]+str(hand)[2]+d
+		l = list(map(int,h))
+		l.sort(reverse=True)
+		d= str(dice)[-2]
+		h = ''.join(map(str,l))
+		print(h)
+		s.append(int(h))
+		s.append(int(d))
 
 	else:
 		d = str(dice)[-1]
 		h = str(hand)[1]+str(hand)[2]+d
-		h[::-1]
+		l = list(map(int,h))
+		l.sort(reverse=True)
+		d= str(dice)[-2]+str(dice)[-1]
+		h = ''.join(map(str,l))
+		print(h)
 		s.append(int(h))
 		s.append(int(d))
 
+
 	return tuple(s)
+
+
 
 
