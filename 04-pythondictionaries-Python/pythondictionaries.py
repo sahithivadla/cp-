@@ -31,6 +31,22 @@ Asian City - Country
 Asian City - Country"""
 
 locations = {'North America': {'USA': ['Mountain View']},"Asia":{"India":["Bangalore"],"China":["Shanghai"]},"Africa":{"Egypt":["Cairo"]}}
+# 1
+s = []
+s= locations['North America']['USA']
+s.sort()
+print(s)
+
+# 2
+
+l= []
+res = []
+l=locations['Asia'].values()
+for i in l :
+    res.extend(i)
+
+
+
 
 
 
