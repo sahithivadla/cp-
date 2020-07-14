@@ -1,7 +1,7 @@
 """Time to play with Python dictionaries!
 You're going to work on a dictionary that
 stores cities by country and continent.
-One is done for you - the city of Mountain 
+One is done for you - the city of Mountain
 View is in the USA, which is in North America.
 
 You need to add the cities listed below by
@@ -30,4 +30,7 @@ American City
 Asian City - Country
 Asian City - Country"""
 
-locations = {'North America': {'USA': ['Mountain View']}}
+locations = {'North America': {'USA': ['Mountain View']},"Asia":{"India":["Bangalore"],"China":["Shanghai"]},"Africa":{"Egypt":["Cairo"]}}
+
+
+
