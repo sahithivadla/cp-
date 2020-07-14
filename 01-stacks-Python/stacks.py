@@ -46,7 +46,7 @@ class stack(object):
 
     def push(self, new_element):
         "Push (add) a new element onto the top of the stack"
-        self.ll.append(new_element)
+        self.ll.insert_first(new_element)
         # top = new_element
 
     def pop(self):
