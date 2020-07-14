@@ -10,6 +10,6 @@ def fun_nearestodd(n):
 	if(int(n)%2 ==1):
 		return int(n)
 	else:
-		return np.ceil(f) // 2 * 2 + 1
+		return np.ceil(n) // 2 * 2 + 1
 
 
