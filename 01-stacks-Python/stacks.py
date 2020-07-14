@@ -32,9 +32,12 @@ class LinkedList(object):
 
     def delete_first(self):
         "Delete the first (head) element in the LinkedList as return it"
-        delitem = self.head
-        self.head = delitem.next
-        return delitem
+        if(self.head == None):
+            return None
+        else:
+            delitem = self.head
+            self.head = delitem.next
+            return delitem
 
 
 class stack(object):
@@ -44,12 +47,11 @@ class stack(object):
     def push(self, new_element):
         "Push (add) a new element onto the top of the stack"
         self.ll.append(new_element)
-        top = new_element
+        # top = new_element
 
     def pop(self):
         "Pop (remove) the first element off the top of the stack and return it"
-
-
-        return(self.ll.delete_first())
+        a = self.ll.delete_first()
+        return(a)
 
 
