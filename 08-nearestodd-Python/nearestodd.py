@@ -9,7 +9,15 @@ import numpy as np
 def fun_nearestodd(n):
 	if(int(n)%2 ==1):
 		return int(n)
+	elif(".0" in str(n)):
+		return int(np.floor(n) // 2 * 2 - 1)
 	else:
-		return np.ceil(n) // 2 * 2 + 1
+		a =np.ceil(n) // 2 * 2 + 1
+		return (int(a))
+		# b = np.floor(n) // 2 * 2 + 1
+		# if(b<=a):
+		# 	return int(b)
+		# else:
+		# 	return int(a)
 
 
