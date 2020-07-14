@@ -10,7 +10,11 @@ def fun_set_kth_digit(n, k, d):
 	if(k>len(str(n))-1):
 		return 0
 	else:
+		s=[]
 		s = list(str(n))
+		s[k-1] = d
+		return int(''.join(s))
+
 
 
 
