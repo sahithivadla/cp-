@@ -8,13 +8,30 @@
 
 def fun_set_kth_digit(n, k, d):
 	if(k>len(str(n))-1):
-		return 0
+		s =[]
+		res=""
+		s = list(str(n))
+		s.insert(-k-1,str(d))
+		for i in s :
+		    res = res+i
+		return int(res)
+	elif(n<0):
+		s =[]
+		res=""
+		s = list(str(n))
+		s.insert(-k,str(d))
+		for i in s :
+		    res = res+i
+		return int(res)
+
 	else:
 		s=[]
+		res=""
 		s = list(str(n))
-		s[k-1] = d
-		return int(''.join(s))
-
+		s[-k-1] = str(d)
+		for i in s :
+		    res = res+i
+		return int(res)
 
 
 
