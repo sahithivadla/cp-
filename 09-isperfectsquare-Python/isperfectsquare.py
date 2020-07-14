@@ -6,15 +6,29 @@
 import math
 def isperfectsquare(n):
 	# your code goes here
-	if(n.isalpha()==True):
-		return False
-	else:
-		n= int(n)
-		if(n<0 or n.is_integer()==False):
-			return False
-		else:
-			if(math.sqrt(n).is_integer()==False):
-				return False
-			else:
-				return True
+	return n
+	# if(isinstance(n, str) == True):
+	# 	if(n.isalpha()==True):
+	# 		return False
+	# 	else:
+	# 		a = int(n)
+	# 		if(a<0 or a.is_integer()==False):
+	# 			return False
+	# 		else:
+	# 			if(math.sqrt(a).is_integer()==False):
+	# 				return False
+	# 			else:
+	# 				return True
+
+
+	# else:
+	# 	a = int(n)
+	# 	if(a<0 or a.is_integer()==False):
+	# 		return False
+	# 	else:
+	# 		if(math.sqrt(a).is_integer()==False):
+	# 			return False
+	# 		else:
+	# 			return True
+
 
