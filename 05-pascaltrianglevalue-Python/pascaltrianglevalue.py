@@ -12,7 +12,7 @@ def fun_pascaltrianglevalue(row, col):
 	if(row<0 or col<0):
 		return None
 	else:
-		res= 0
+		res= 1
 		if(col>row-col):
 			col =row-col
 		for	i in range(0,col):
