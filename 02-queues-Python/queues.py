@@ -15,4 +15,9 @@ class Queue:
         return self.storage[0]
 
     def dequeue(self):
-        del self.storage[0]
+        if len(self.storage) == 0:
+            return None
+        else:
+            delitem =  self.storage[0]
+            del self.storage[0]
+            return delitem
