@@ -12,7 +12,4 @@ def get_fib(position):
     else:
         return get_fib(position-1)+get_fib(position-2)
 
-
-
-
     return -1
