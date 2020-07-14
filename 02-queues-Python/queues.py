@@ -15,4 +15,4 @@ class Queue:
         return self.storage[0]
 
     def dequeue(self):
-        pass
+        del self.storage[0]
