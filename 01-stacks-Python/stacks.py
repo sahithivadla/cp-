@@ -48,9 +48,8 @@ class stack(object):
 
     def pop(self):
         "Pop (remove) the first element off the top of the stack and return it"
-        if top == None:
-            return None
-        else:
-            return(self.ll.delete_first())
+
+
+        return(self.ll.delete_first())
 
 
