@@ -6,11 +6,14 @@
 
 
 def isrotated(str1, str2):
-	ind= str2.index(str1[0])
-	d =len(str1)-ind
-	res = ""
-	res = str1[d:]+str1[0:d]
-	if(res==str2):
-		return True
-	else:
+	try:
+		ind= str2.index(str1[0])
+		d =len(str1)-ind
+		res = ""
+		res = str1[d:]+str1[0:d]
+		if(res==str2):
+			return True
+		else:
+			return False
+	except:
 		return False
