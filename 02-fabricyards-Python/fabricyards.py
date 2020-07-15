@@ -29,6 +29,6 @@ def fun_fabricexcess(inches):
 		return 0
 	else:
 		c=(inches+36) - (inches%36)
-		return c
+		return c-inches
 
 
