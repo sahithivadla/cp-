@@ -10,10 +10,10 @@
 def fun_interleave(s1,s2):
 	l =0
 	bs = ""
-	if(s1<s2):
+	if(len(s1)<len(s2)):
 		l=len(s1)
 		bs=s2
-	elif(s1>s2):
+	elif(len(s1)>len(s2)):
 		l =len(s2)
 		bs=s1
 	else:
