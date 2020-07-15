@@ -6,12 +6,14 @@
 
 def fun_replace(s1, s2, s3):
 
-	try:
-		ind = s1.index(s2)
-		res =""
-		res = s1[0:ind]+s3+s1[ind+len(s2):]
-		return res
-	except:
-		return s1
+		x = [i for i in range(len(s1)) if s1.startswith(s2, i)]
+		if(len(x)==0):
+			return s1
+		else:
+			res =""
+			for ind in x:
+				res = s1[0:ind]+s3+s1[ind+len(s2):]
+			return res
+
 
 
