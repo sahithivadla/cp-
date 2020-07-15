@@ -9,7 +9,16 @@
 import cmath
 def fun_find_int_roots(a, b, c):
 	d = 0
+	l=[]
 	d = (b**2) -4*a*c
-	return 0, 0
+	sol1 = (-b-cmath.sqrt(d))/(2*a)
+	sol2 = (-b+cmath.sqrt(d))/(2*a)
+	l.append(int(str(sol1)[1]))
+	l.append(int(str(sol2)[1]))
+	l.sort()
+	return l[0],l[1],
+
+
+	# return 0, 0
 
 
