@@ -14,5 +14,5 @@ def largestperfectsquare(n):
 	if(str(c)[-2]+str(c)[-1] == ".0"):
 		return n
 	else:
-		c= math.floor(math.sqrt(n)) -1
+		c= math.floor(math.sqrt(n))
 		return c*c
