@@ -7,7 +7,7 @@ def removeduplicate(text):
 	# Your code goes here
 	s = []
 	res =""
-	for i in test:
+	for i in text:
 		if i not in s:
 			s.append(i)
 			res=res+i
