@@ -9,4 +9,9 @@
 
 def largestperfectsquare(n):
 	# your code goes here
-	pass
+	c = math.sqrt(n)
+	if(str(c)[-2]+str(c)[1] == ".0"):
+		return n
+	else:
+		c= math.floor(math.sqrt) -1
+		return c*c
