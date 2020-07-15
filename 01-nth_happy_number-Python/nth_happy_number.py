@@ -13,13 +13,16 @@ def ishappynumber(n):
 	n =abs(n)
 	if(n == 1):
 		return True
-	# elif(len(str(n))==1):
-	# 	n=n*n
-	# 	while(n!=1):
-	# 		if len(str(n)) == 3 :
-	# 			n = int(str(n)[0]) **2 + int(str(n)[1]) **2 + int(str(n)[2]) **2
-	# 		elif  len(str(n)) == 2 :
-	# 			n = int(str(n)[0]) **2 + int(str(n)[1]) **2
+	elif(len(str(n))==1):
+		n=n*n
+		while(n!=1):
+			if len(str(n)) == 3 :
+				n = int(str(n)[0]) **2 + int(str(n)[1]) **2 + int(str(n)[2]) **2
+			elif  len(str(n)) == 2 :
+				n = int(str(n)[0]) **2 + int(str(n)[1]) **2
+		if(n==1):
+			return True
+		return False
 
 	else:
 		while(len(str(n))!=1):
