@@ -27,7 +27,7 @@ def fun_applycaesarcipher(msg, shift):
         if(shift<0):
             if ord(i)>=65 and ord(i)<=90 and ord(i) +shift <65:
         	    res=res+ chr(ord(i)+26+shift)
-            elif(ord(i)>=97 and ord(i)<=122 and ord(i) + shift <96):
+            elif(ord(i)>=97 and ord(i)<=122 and ord(i) + shift <97):
         	    res=res+ chr(ord(i)+26+shift)
             else:
                 res=res+chr(ord(i)+shift)
