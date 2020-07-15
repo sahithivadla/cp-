@@ -24,7 +24,7 @@ def matrixadd(L, M):
 		for i in range(0,2):
 			temp = []
 			for j in range(0,len(M)):
-				temp.append(L[0][j]+M[1][j])
+				temp.append(L[i][j]+M[i][j])
 			res.append(temp)
 	return res
 
