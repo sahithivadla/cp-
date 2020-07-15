@@ -22,7 +22,7 @@ def fun_find_int_roots(a, b, c):
 		l.append(int(str(sol2)[1]))
 
 	l.sort()
-	return l[0],l[1],
+	return l[0],l[1]
 
 
 	# return 0, 0
