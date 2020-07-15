@@ -4,9 +4,9 @@
 # m**2 == n), and False otherwise. Do not crash on non-ints nor on negative ints.
 
 import math
-def isperfectsquare(s):
+def isperfectsquare(row):
 	# your code goes here
-	return s
+	return row
 	# if(isinstance(n, str) == True):
 	# 	if(n.isalpha()==True):
 	# 		return False
