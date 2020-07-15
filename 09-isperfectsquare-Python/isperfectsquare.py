@@ -7,14 +7,14 @@ import math
 def isperfectsquare(n):
 	# your code goes here
 	if(isinstance(n, str) == True):
-		if(n.isalpha()==True):
+		if(n.isalpha()==True or n.isalnum()==True):
 			return False
 		else:
 			a = int(n)
-			if(a<0 or a.is_integer()==False):
+			if(a<0 or isinstance(a,int)==False):
 				return False
 			else:
-				if(math.sqrt(a).is_integer()==False):
+				if(isinstance(math.sqrt(a),int)==False):
 					return False
 				else:
 					return True
@@ -22,10 +22,10 @@ def isperfectsquare(n):
 
 	else:
 		a = int(n)
-		if(a<0 or a.is_integer()==False):
+		if(a<0 or isinstance(a,int)==False):
 			return False
 		else:
-			if(math.sqrt(a).is_integer()==False):
+			if(isinstance(math.sqrt(a),int)==False):
 				return False
 			else:
 				return True
