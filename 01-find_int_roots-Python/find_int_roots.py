@@ -13,18 +13,27 @@ def fun_find_int_roots(a, b, c):
 	d = (b**2) -4*a*c
 	sol1 = (-b-cmath.sqrt(d))/(2*a)
 	sol2 = (-b+cmath.sqrt(d))/(2*a)
-	if(str(sol1)[1]=="-"):
-		l.append(int(str(sol1)[1]+str(sol1)[2]))
-	if(str(sol1)[2]=="-"):
-		l.append(int(str(sol2)[1]+str(sol2)[2]))
+	print(sol1)
+	print(sol2)
+	if(str(sol1)[1]=="-" and (str(sol2)[1]!="-")):
+	   print("in - sol1")
+	   l.append(int(str(sol1)[1]+str(sol1)[2]))
+	   l.append(int(str(sol2)[1]))
+
+	   print(l)
+	if(str(sol2)[1]=="-" and str(sol1)[1]!="-"):
+	   print("in -sol2")
+	   l.append(int(str(sol2)[1]+str(sol2)[2]))
+	   l.append(int(str(sol1)[1]))
 	if(str(sol1)[1]!="-" and str(sol2)[1]!="-"):
 		l.append(int(str(sol1)[1]))
 		l.append(int(str(sol2)[1]))
+	if(str(sol1)[1]=="-" and str(sol2)[1]=="-"):
+		l.append(int(str(sol2)[1]+str(sol2)[2]))
+		l.append(int(str(sol1)[1]+str(sol1)[2]))
 
 	l.sort()
 	return l[0],l[1]
 
-
-	# return 0, 0
 
 
