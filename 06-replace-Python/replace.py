@@ -10,9 +10,9 @@ def fun_replace(s1, s2, s3):
 		if(len(x)==0):
 			return s1
 		else:
-			res =""
+			res =s1
 			for ind in x:
-				res = s1[0:ind]+s3+s1[ind+len(s2):]
+				res = res[0:ind]+s3+res[ind+len(s2):]
 			return res
 
 
