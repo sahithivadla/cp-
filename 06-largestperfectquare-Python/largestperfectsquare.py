@@ -7,11 +7,12 @@
 # Hint: you may wish to use a similar approach to how you solved isPerfectSquare on the hw.
 # Another hint: This can be written using just one or two lines of Python.
 
+import math
 def largestperfectsquare(n):
 	# your code goes here
 	c = math.sqrt(n)
 	if(str(c)[-2]+str(c)[1] == ".0"):
 		return n
 	else:
-		c= math.floor(math.sqrt) -1
+		c= math.floor(math.sqrt(n)) -1
 		return c*c
