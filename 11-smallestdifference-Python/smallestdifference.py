@@ -12,5 +12,5 @@ def smallestdifference(a):
 			s = a[i]-a[j]
 			if(s<m):
 				m=s
+	return m
 
-	pass
