@@ -8,7 +8,7 @@ def isrotated(str1, str2):
 	indrotated = str2.index(str1[0])
 	res = ""
 	res = str1[indrotated:]+str1[0:indrotated]
-	if(res==s2):
+	if(res==str2):
 		return True
 	else:
 		return False
