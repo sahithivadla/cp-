@@ -5,4 +5,11 @@
 
 def removeduplicate(text):
 	# Your code goes here
-	pass
+	s = []
+	res =""
+	for i in test:
+		if i not in s:
+			s.append(i)
+			res=res+i
+	return res
+
