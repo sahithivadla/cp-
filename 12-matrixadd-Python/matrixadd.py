@@ -19,7 +19,7 @@ def matrixadd(L, M):
 	# Your code goes here
 	res =[]
 # 	print(len(L))
-	if(len(L)!=len(M) or len(L[0])!=len(M[0])):
+	if(len(L)!=len(M) or len(L[0])!=len(M[0]) or len(L[1])!=len(M[1])):
 		return None
 	else:
 		for i in range(0,len(L)):
