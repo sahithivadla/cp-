@@ -12,4 +12,4 @@ def gcd(m, n):
 	if(n ==0):
 		return m
 	else:
-		gcd(n,m%n)
+		return gcd(n,m%n)
