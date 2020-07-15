@@ -25,7 +25,7 @@ def fun_fabricyards(inches):
 
 def fun_fabricexcess(inches):
 	# your code goes here
-	if(inches == 0 or str(i/36)[-2]+str(i/36)[-1] == ".0"):
+	if(inches == 0 or str(inches/36)[-2]+str(inches/36)[-1] == ".0"):
 		return 0
 	else:
 		c=(inches+36) - (inches%36)
