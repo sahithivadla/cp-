@@ -4,7 +4,7 @@
 # m**2 == n), and False otherwise. Do not crash on non-ints nor on negative ints.
 
 import math
-def isperfectsquare(n):
+def isperfectsquare(s):
 	# your code goes here
 	return s
 	# if(isinstance(n, str) == True):
