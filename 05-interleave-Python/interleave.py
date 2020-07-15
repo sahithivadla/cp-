@@ -17,7 +17,7 @@ def fun_interleave(s1,s2):
 		l =len(s2)
 		bs=s1
 	else:
-		l =s1
+		l =len(s1)
 	res = ""
 	for i in range(0,l):
 		res =res + s1[i]+s2[i]
