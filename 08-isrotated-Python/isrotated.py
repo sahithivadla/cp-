@@ -4,10 +4,12 @@
 # "XYZ" and "YXZ" then return false.
 
 
+
 def isrotated(str1, str2):
-	indrotated = str2.index(str1[0])
+	ind= str2.index(str1[0])
+	d =len(str1)-ind
 	res = ""
-	res = str1[indrotated:]+str1[0:indrotated]
+	res = str1[d:]+str1[0:d]
 	if(res==str2):
 		return True
 	else:
