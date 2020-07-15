@@ -14,9 +14,9 @@ def fun_applycaesarcipher(msg, shift):
 	res = ""
 	for i in msg :
 		if ord(i) + shift > 90 or ord(i) + shift > 122:
-			res=res+ chr(ord(msg)-26+shift)
+			res=res+ chr(ord(i)-26+shift)
 		else:
-			res = res + chr(ord(msg)+shift)
+			res = res + chr(ord(i)+shift)
 
 	return res
 
