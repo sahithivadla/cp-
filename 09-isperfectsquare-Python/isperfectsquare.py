@@ -6,7 +6,7 @@
 import math
 def isperfectsquare(n):
 	# your code goes here
-	return n
+	return s
 	# if(isinstance(n, str) == True):
 	# 	if(n.isalpha()==True):
 	# 		return False
