@@ -16,10 +16,11 @@
 
 def ishappynumber(n):
 	# your code goes here
+	n =abs(n)
 	if(n == 1):
 		return True
 	else:
-		while(len(n)!=1):
+		while(len(str(n))!=1):
 			if len(str(n)) == 3 :
 				n = int(str(n)[0]) **2 + int(str(n)[1]) **2 + int(str(n)[2]) **2
 			elif  len(str(n)) == 2 :
