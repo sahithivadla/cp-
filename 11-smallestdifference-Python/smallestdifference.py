@@ -8,7 +8,7 @@ def smallestdifference(a):
 	# Your code goes here
 	m =10000000000000000000000000000
 	for i in range(0,len(a)):
-		for j in range(i+1,len(a)):
+		for j in range(0,len(a)):
 			s = a[i]-a[j]
 			if(s>0):
 				if(s<m):

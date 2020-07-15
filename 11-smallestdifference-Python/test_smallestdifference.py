@@ -15,5 +15,5 @@ import pytest
 	([3, -7, 0], 3),
 
 ])
-def test_smallestdifference(input_value, result):    
+def test_smallestdifference(input_value, result):
     assert smallestdifference(input_value) == result
