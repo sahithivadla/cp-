@@ -7,7 +7,7 @@
 def fun_replace(s1, s2, s3):
 	ind = s1.index(s2)
 	res =""
-	res = s[0:ind]+s3+s[ind+len(s2):]
+	res = s1[0:ind]+s3+s1[ind+len(s2):]
 
 	return res
 
