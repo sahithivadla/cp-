@@ -11,10 +11,10 @@ def fun_replace(s1, s2, s3):
 		else:
 			# print("else")
 			res=s1
-			while(len(x)==0):
+			while(len(x)!=0):
 				x = [i for i in range(len(res)) if res.startswith(s2,i)]
-				# if(len(x)==0):
-				#     break
+				if(len(x)==0):
+				    break
 				res = res[0:x[0]]+s3+res[x[0]+len(s2):]
 			return res
 
