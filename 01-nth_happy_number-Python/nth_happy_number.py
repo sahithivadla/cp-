@@ -43,7 +43,6 @@ def alllist():
 def fun_nth_happy_number(n):
 	t =[]
 	t= alllist()
-
-	# return t[n]
+	return t[n]
 
 
