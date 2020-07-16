@@ -13,10 +13,6 @@ def smallestdifference(a):
 	for i in range(1,len(a)):
 		if(a[i]- a[i-1]<m):
 			m = a[i]-a[i-1]
-		# for j in range(0,len(a)):
-		# 	s = a[i]-a[j]
-		# 	if(s>0):
-		# 		if(s<m):
-		# 			m=s
+
 	return m
 
