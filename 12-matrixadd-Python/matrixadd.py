@@ -19,11 +19,14 @@ def matrixadd(L, M):
 	# Your code goes here
 	res =[]
 # 	print(len(L))
-	if(len(L)!=len(M) or len(L[0])!=len(M[0]) or len(L[1])!=len(M[1])):
+	if(len(L)!=len(M)):
 		return None
 	else:
 		for i in range(0,len(L)):
+			if(len(L[i])!=len(M[i])):
+				return None
 			temp = []
+
 			for j in range(0,len(M[0])):
 # 			 #   print(L[i][j])
 # 			 #   print(M[i][j])
