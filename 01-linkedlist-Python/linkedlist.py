@@ -36,7 +36,7 @@ class LinkedList(object):
         # Your code goes here
         cur = self.head
         c= 0
-        while(cur.next!=None):
+        while(cur!=None):
             if(c==position):
                 return cur
             cur =cur.next
@@ -69,5 +69,30 @@ class LinkedList(object):
             if(cur.next.value == value):
                 cur.next = cur.next.next
             cur =cur.next
+    def printStackTrace(self) :
+
+        current = self.head
+
+        if self.head :
+
+            while current:
+
+                print(current.value)
+
+                current = current.next
+e1 = Element(1)
+e2 = Element(2)
+e3 = Element(3)
+
+ll = LinkedList(e1)
+ll.append(e2)
+ll.append(e3)
+
+# print(ll.get_position(1).value)
+# print(ll.get_position(2).value)
+# print(ll.get_position(3).value)
+e4 = Element(4)
+ll.insert(e4,3)
+ll.printStackTrace()
 
 
