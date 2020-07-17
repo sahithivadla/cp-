@@ -64,5 +64,6 @@ class LinkedList(object):
         while(cur!=None):
             if(cur.next.value == value):
                 cur.next = cur.next.next
+            cur =cur.next
 
 
