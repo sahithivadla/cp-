@@ -21,13 +21,12 @@ class LinkedList(object):
         # Your code goes here
         if(self.head == None):
             self.head = new_element
-            return
         else:
             cur = self.head
             while(cur.next!=None):
                 cur = cur.next
             cur.next = new_element
-            return
+
 
 
     def get_position(self, position):
@@ -52,7 +51,7 @@ class LinkedList(object):
         the 2nd and 3rd elements."""
         # Your code goes here
         cur =self.head
-        c = 0
+        c = 1
         while(cur!=None):
             if(c+1 == position):
                 rws =cur.next
