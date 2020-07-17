@@ -3,7 +3,7 @@ Input a list.
 Output a sorted list."""
 def q(array):
 	low =0
-	high = len(array)
+	high = len(array)-1
 	if low < high:
 		pi = partition(array,low,high)
 		quickSort(array, low, pi-1)
