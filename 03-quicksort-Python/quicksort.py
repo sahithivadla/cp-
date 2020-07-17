@@ -2,8 +2,6 @@
 Input a list.
 Output a sorted list."""
 def q(array,low,high):
-	low =0
-	high = len(array)-1
 	if low < high:
 		pi = partition(array,low,high)
 		q(array, low, pi-1)
