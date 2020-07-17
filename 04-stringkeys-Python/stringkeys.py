@@ -15,7 +15,6 @@ class HashTable(object):
         self.table[string] = val
 
 
-
     def lookup(self, string):
         """Return the hash value if the
         string is already in the table.
