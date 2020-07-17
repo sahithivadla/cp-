@@ -1,7 +1,7 @@
 """Implement quick sort in Python.
 Input a list.
 Output a sorted list."""
-def q(array):
+def q(array,low,high):
 	low =0
 	high = len(array)-1
 	if low < high:
