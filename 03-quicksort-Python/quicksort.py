@@ -6,8 +6,8 @@ def q(array):
 	high = len(array)-1
 	if low < high:
 		pi = partition(array,low,high)
-		quickSort(array, low, pi-1)
-		quickSort(array, pi+1, high)
+		q(array, low, pi-1)
+		q(array, pi+1, high)
 
 def partition(arr,low,high):
     i = ( low-1 )
