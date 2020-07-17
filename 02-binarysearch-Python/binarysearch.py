@@ -12,13 +12,13 @@ doesn't exist in the list."""
 
 def binary_search(input_array, value):
     low = 0
-    high = len(arr) - 1
+    high = len(input_array) - 1
     mid = 0
     while low <= high:
         mid = (high + low) // 2
-        if arr[mid] < x:
+        if input_array[mid] < x:
             low = mid + 1
-        elif arr[mid] > x:
+        elif input_array[mid] > x:
             high = mid - 1
         else:
             return mid
