@@ -14,4 +14,13 @@ def binary_search(input_array, value):
     # Your code goes here
     l =0
     h = len(input_array)
+    while(h>=l):
+        mid = (l+h)//2
+        if(input_array[mid]==value):
+            return mid
+        elif(input_array[mid]>value):
+            h = mid-1
+        else:
+            low = mid+1
+
     pass
