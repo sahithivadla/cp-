@@ -22,5 +22,5 @@ def partition(arr,low,high):
 
 def quicksort(array):
 	# Your code goes here
-	a = q(array)
+	a = q(array,0,len-1)
 	return (a)
