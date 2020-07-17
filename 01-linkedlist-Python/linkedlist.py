@@ -21,6 +21,7 @@ class LinkedList(object):
         # Your code goes here
         if(self.head == None):
             self.head = new_element
+            return
         else:
             cur = self.head
             while(cur!=None):
