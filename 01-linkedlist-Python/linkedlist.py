@@ -52,7 +52,7 @@ class LinkedList(object):
         # Your code goes here
         cur =self.head
         c = 1
-        while(cur!=None):
+        while(cur.next!=None):
             if(c+1 == position):
                 rws =cur.next
                 cur.next = new_element
