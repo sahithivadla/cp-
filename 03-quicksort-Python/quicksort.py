@@ -9,7 +9,7 @@ def q(array,low,high):
 
 def partition(arr,low,high):
     i = ( low-1 )
-    pivot = arr[high]
+    pivot = array[high]
     for j in range(low , high):
         if   array[j] < pivot:
             i = i+1
