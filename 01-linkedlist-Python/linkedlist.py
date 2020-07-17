@@ -19,10 +19,13 @@ class LinkedList(object):
 
     def append(self, new_element):
         # Your code goes here
-        cur = self.head
-        while(cur!=None):
-            cur = cur.next
-        cur.next = new_element
+        if(self.head == None):
+            self.head = new_element
+        else:
+            cur = self.head
+            while(cur!=None):
+                cur = cur.next
+            cur.next = new_element
 
 
     def get_position(self, position):
