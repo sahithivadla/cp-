@@ -36,7 +36,7 @@ class LinkedList(object):
         # Your code goes here
         cur = self.head
         c= 0
-        while(cur!=None):
+        while(cur.next!=None):
             if(c==position):
                 return cur
             cur =cur.next
