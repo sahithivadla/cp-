@@ -7,7 +7,7 @@ def q(array,low,high):
 		q(array, low, pi-1)
 		q(array, pi+1, high)
 
-def partition(arr,low,high):
+def partition(array,low,high):
     i = ( low-1 )
     pivot = array[high]
     for j in range(low , high):
@@ -20,5 +20,5 @@ def partition(arr,low,high):
 
 def quicksort(array):
 	# Your code goes here
-	a = q(array,0,len(array)-1)
-	return (a)
+	q(array,0,len(array)-1)
+	return (array)
