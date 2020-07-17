@@ -24,7 +24,7 @@ class LinkedList(object):
             return
         else:
             cur = self.head
-            while(cur!=None):
+            while(cur.next!=None):
                 cur = cur.next
             cur.next = new_element
             return
