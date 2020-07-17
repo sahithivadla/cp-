@@ -80,19 +80,19 @@ class LinkedList(object):
                 print(current.value)
 
                 current = current.next
-e1 = Element(1)
-e2 = Element(2)
-e3 = Element(3)
+# e1 = Element(1)
+# e2 = Element(2)
+# e3 = Element(3)
 
-ll = LinkedList(e1)
-ll.append(e2)
-ll.append(e3)
+# ll = LinkedList(e1)
+# ll.append(e2)
+# ll.append(e3)
 
-# print(ll.get_position(1).value)
-# print(ll.get_position(2).value)
-# print(ll.get_position(3).value)
-e4 = Element(4)
-ll.insert(e4,3)
-ll.printStackTrace()
+# # print(ll.get_position(1).value)
+# # print(ll.get_position(2).value)
+# # print(ll.get_position(3).value)
+# e4 = Element(4)
+# ll.insert(e4,3)
+# ll.printStackTrace()
 
 
