@@ -72,7 +72,7 @@ class LinkedList(object):
             while(cur!=None and cur.next!=None and cur.next.value!=value):
                 cur =cur.next
             if(cur and cur.next ):
-                cur .next =cur.next.next
+                cur .next = cur.next.next
 
     def printStackTrace(self) :
 
