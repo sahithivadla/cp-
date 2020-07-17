@@ -66,4 +66,3 @@ class LinkedList(object):
                 cur.next = cur.next.next
 
 
-        pass
