@@ -18,9 +18,7 @@ class BinaryTree(object):
         if self.root.value < find_val:
             return search(self.root.right,find_val)
 
-        return search(root.left,key)
-
-
+        return ssearch(self.root.left,find_val)
 
 
     def print_tree(self):
