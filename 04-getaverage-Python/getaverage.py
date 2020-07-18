@@ -18,7 +18,8 @@ def fun_getaverage(s):
 	    if(i.isdigit()==True):
 	        res=res+int(i)
 	        c=c+1
-	return(res/c)
+	if(c>0):
+		return(res/c)
 
 	return 0.0
 
