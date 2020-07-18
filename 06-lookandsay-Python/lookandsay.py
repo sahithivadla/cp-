@@ -24,9 +24,9 @@ def lookandsay(a):
 	        if(a[i]==a[i-1]):
 	            continue
 	        else:
-	            c=1
+	            c=0
 	            for j in range(i,len(a)):
-	                if(a[i-1]==a[j]):
+	                if(a[i]==a[j]):
 	                    c =c+1
 	                else:
 	                  break
