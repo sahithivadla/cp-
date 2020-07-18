@@ -20,16 +20,17 @@ class BinaryTree(object):
         as they are visited in
         a pre-order traversal."""
         # Your code goes here
+        return self.data
         pass
 
     def preorder_search(self, start, find_val):
-        """Helper method - use this to create a 
+        """Helper method - use this to create a
         recursive search solution."""
         # Your code goes here
         pass
 
     def preorder_print(self, start, traversal):
-        """Helper method - use this to create a 
+        """Helper method - use this to create a
         recursive print solution."""
         # Your code goes here
         pass
