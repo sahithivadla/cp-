@@ -7,5 +7,4 @@
 def findzerowithbisection(x, epsilon):
 	# epsilon and step are initialized
 	# don't change these values
-	# epsilon
-	# your code starts here
+
