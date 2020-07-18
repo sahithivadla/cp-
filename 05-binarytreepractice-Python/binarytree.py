@@ -33,10 +33,17 @@ class BinaryTree(object):
         """Helper method - use this to create a
         recursive search solution."""
         # Your code goes here
-        pass
+        if find_val == start.value :
+            return True
+        elif find_val < start.value and start.left != None :
+            return self.preorder_search(start.left, find_val)
+        elif find_val > start.value and start.right != None :
+            return self.preorder_search(start.right, find_val)
+        return False
 
     def preorder_print(self, start, traversal):
         """Helper method - use this to create a
         recursive print solution."""
         # Your code goes here
-        pass
+        self.preorder_print(start.left)
+        self.preorder_print(start.right)
