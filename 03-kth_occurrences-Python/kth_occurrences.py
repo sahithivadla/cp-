@@ -3,7 +3,6 @@
 # can account as K-th the most frequent character then, print any one of them.
 
 
-
 def fun_kth_occurrences(s, n):
 	d ={}
 	for i in s:
@@ -11,9 +10,8 @@ def fun_kth_occurrences(s, n):
 			d[i] =d[i]+1
 		else:
 			d[i]=1
-
-	return d[n]
-
-	return 'a'
-
-
+	s = sorted(d.items(),key=lambda x:x[1] ,reverse = True)
+	lis = []
+	for key in s.keys():
+	    lis.append(key)
+	return s[n]
