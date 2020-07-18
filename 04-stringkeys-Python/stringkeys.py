@@ -11,7 +11,7 @@ class HashTable(object):
         the table."""
         # Hash Value = (ASCII Value of First Letter * 100) + ASCII Value of Second Letter
         # Your code goes here
-        val = (ord(string[0])*100) + ord(string[0])
+        val = ord(string[0])*100 + ord(string[1])
         self.table[val] = string
 
 
