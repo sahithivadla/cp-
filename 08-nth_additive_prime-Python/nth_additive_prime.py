@@ -34,4 +34,3 @@ def fun_nth_additive_prime(n):
 	return k
 
 
-	return 1
