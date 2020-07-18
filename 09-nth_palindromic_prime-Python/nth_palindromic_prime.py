@@ -27,6 +27,7 @@ def fun_nth_palindromic_prime(n):
 		if(c==n+1):
 			ans = k
 			break
+		k=k+1
 	return ans
 
 
