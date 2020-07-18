@@ -11,7 +11,18 @@ def isrotation(x, y):
 		return True
 	if(len(str(x))!= len(str(y))):
 		return False
-	if(str(x)[0]+str(x)[1]+str(x)[2] not in str(y)):
+	if(str(x)[0]+str(x)[1] not in str(y)):
 		return False
+	rot = 1
+	s = ""
+	res =""
+	while(1):
+		s = str(x)
+		res = s[rot:]+s[0:rot]
+		if(res == str(y)):
+			return True
+		rot = rot + 1
+
+
 
 	pass
