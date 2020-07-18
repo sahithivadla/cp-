@@ -13,12 +13,10 @@ class BinaryTree(object):
         is in the tree, return
         False otherwise."""
         # Your code goes here
-        if(self.root == None or find_val == self.root):
-            return self.root
-        if self.root.value < find_val:
-            return search(self.root.right,find_val)
-
-        return ssearch(self.root.left,find_val)
+        if self.root == None or type(find_val) != int :
+            return False
+        else :
+            return self.preorder_search(self.root, find_val)
 
 
     def print_tree(self):
