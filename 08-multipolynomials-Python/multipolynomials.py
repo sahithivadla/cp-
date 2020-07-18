@@ -7,31 +7,36 @@
 
 def multipolynomials(p1, p2):
 	# Your code goes here
-	s =""
-	s1 =""
-	for i in range(0,len(p1)):
-		if(i!=0):
-			if(p1[i]==0):
-				continue
-			else:
-				s=s+ "+"+str(p1[i])+"|"+"x**"+str(len(p1)-1-i)
-		else:
-			if(p1[i]==0):
-				continue
-			else:
-				s=s+str(p1[i])+"|"+"x**"+str(len(p1)-1-i)
-	for i in range(0,len(p2)):
-		if(i!=0):
-			if(p2[i]==0):
-				continue
-			else:
-				s1=s1+ "+"+str(p2[i])+"|"+"x**"+str(len(p1)-1-i)
-		else:
-			if(p2[i]==0):
-				continue
-			else:
-				s1=s1+str(p2[i])+"|"+"x**"+str(len(p2
-				)-1-i)
+	res = [0]*(len(p1)+len(p2)-1)
+	for i in range(len(p1)):
+		for j in range(len(p2)):
+			res[i+j] = res[i+j]+(p1[i]*p2[j])
+	return res
+	# s =""
+	# s1 =""
+	# for i in range(0,len(p1)):
+	# 	if(i!=0):
+	# 		if(p1[i]==0):
+	# 			continue
+	# 		else:
+	# 			s=s+ "+"+str(p1[i])+"|"+"x**"+str(len(p1)-1-i)
+	# 	else:
+	# 		if(p1[i]==0):
+	# 			continue
+	# 		else:
+	# 			s=s+str(p1[i])+"|"+"x**"+str(len(p1)-1-i)
+	# for i in range(0,len(p2)):
+	# 	if(i!=0):
+	# 		if(p2[i]==0):
+	# 			continue
+	# 		else:
+	# 			s1=s1+ "+"+str(p2[i])+"|"+"x**"+str(len(p1)-1-i)
+	# 	else:
+	# 		if(p2[i]==0):
+	# 			continue
+	# 		else:
+	# 			s1=s1+str(p2[i])+"|"+"x**"+str(len(p2
+	# 			)-1-i)
 
 
 
