@@ -13,13 +13,27 @@
 
 def fun_isfactorish(n):
 	l =[]
-	if(len(str(n))>3 or "0" in str(n)):
-		return False
-	l =list(map(int,str(abs(n))))
-	for i in l:
-		if(n%i != 0):
+	for i in str(n):
+		if(i in l):
 			return False
-	return True
+		else:
+			l.append(i)
 
-	return False
+	if(len(str(abs(n)))!=3 or "0" in str(n)):
+		return False
+
+
+	else:
+		repeat = []
+		l =list(map(int,str(abs(n))))
+		# for i in l:
+		# 	if i in l:
+		# 		return False
+
+		for i in l:
+			if(n%i != 0):
+				return False
+		return True
+
+		return False
 
