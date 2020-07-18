@@ -30,7 +30,8 @@ def multipolynomials(p1, p2):
 			if(p2[i]==0):
 				continue
 			else:
-				s1=s1+str(p2[i])+"|"+"x**"+str(len(p2)-1-i)
+				s1=s1+str(p2[i])+"|"+"x**"+str(len(p2
+				)-1-i)
 
 
 
