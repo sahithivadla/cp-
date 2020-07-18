@@ -16,7 +16,7 @@ def isprime(a):
 def fun_nth_additive_prime(n):
 	k = 2
 	l = [2,3,5,7]
-	c= 1
+	c= 0
 	ans = 0
 	while(True):
 		if(len(str(k))==1 and k in l):
