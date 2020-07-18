@@ -17,6 +17,7 @@ def fun_nth_additive_prime(n):
 	k = 2
 	l = [2,3,5,7]
 	c= 1
+	ans = 0
 	while(True):
 		if(len(str(k))==1 and k in l):
 			c=c+1
@@ -26,8 +27,11 @@ def fun_nth_additive_prime(n):
 				c=c+1
 
 		if(c==n+1):
-			return(k)
+			ans = k
+			break
+
 		k=k+1
+	return k
 
 
 	return 1
