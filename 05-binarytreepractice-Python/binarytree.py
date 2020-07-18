@@ -16,7 +16,9 @@ class BinaryTree(object):
         if(self.root == None or find_val == self.root):
             return self.root
         if self.root.value < find_val:
-            return search(root.right,key)
+            return search(self.root.right,find_val)
+
+        return search(root.left,key)
 
 
 
