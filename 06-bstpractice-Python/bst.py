@@ -13,26 +13,29 @@ class BST(object):
         if new_val < x.value :
 
             if x.left == None :
-
                 x.left = Node(new_val)
 
             else :
-
                 self._insert(new_val, x.left)
         else :
 
             if x.right == None :
-
                 x.right = Node(new_val)
-
             else :
-
                 self._insert(new_val, self.right)
         pass
 
     def printSelf(self):
         # Your code goes here
-        pass
+        if new_val == None :
+            return
+
+        if self.root == None :
+            self.root = Node(new_val)
+
+        else :
+            self._insert(new_val, self.root)
+
 
     def search(self, find_val):
         # Your code goes here
