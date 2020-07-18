@@ -20,14 +20,15 @@ def fun_nth_palindromic_prime(n):
 	c=0
 	ans = 0
 	while(True):
-		if(len(str(k))>1 and k in l):
-			c = c+1
-		if(len(str(k))>1 and isprime(k) == True and isprime(int(str(k)[::-1])))	:
-			c= c+1
+		if(len(str(k))==1 and k in l):
+		    c = c+1
+		if(len(str(k))>1 and isprime(k) == True and str(k) == str(k)[::-1]):
+		    s = int(str(k)[::-1])
+		    if(isprime(s) == True):
+		        c= c+1
 		if(c==n+1):
 			ans = k
 			break
 		k=k+1
 	return ans
-
 
