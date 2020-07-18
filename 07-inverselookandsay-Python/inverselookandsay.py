@@ -12,6 +12,8 @@ def inverselookandsay(a):
 	# Your code goes here
 	l =[]
 	n =0
+	if(len(a) ==1 and a[0]==()):
+		return l
 	for i in a:
 		n=i[0]
 		for j in range(0,n):
