@@ -11,7 +11,7 @@ def isrotation(x, y):
 		return True
 	if(len(str(x))!= len(str(y))):
 		return False
-	if(str(x)[0]+str(x)[1]+str(x)[2] not in y):
+	if(str(x)[0]+str(x)[1]+str(x)[2] not in str(y)):
 		return False
 
 	pass
