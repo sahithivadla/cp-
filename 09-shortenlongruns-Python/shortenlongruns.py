@@ -38,10 +38,10 @@ def shortenlongruns(L, k):
 
 	count = 0
 	res =[]
-	for t in lookandsay(l):
+	for t in lookandsay(L):
 		if(t[0]>=k):
 			res.extend([t[1]]*(k-1))
 		else:
 			res.append(t[1])
+	return(res)
 
-	pass
