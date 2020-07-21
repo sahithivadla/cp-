@@ -30,25 +30,20 @@ American City
 Asian City - Country
 Asian City - Country"""
 
-locations = {'North America': {'USA': ['Mountain View']},"Asia":{"India":["Bangalore"],"China":["Shanghai"]},"Africa":{"Egypt":["Cairo"]}}
+locations = { 'North America': {'USA': ['Mountain View', 'Atlanta']},'Asia': {'India': ['Bangalore'] , 'China': ['Shanghai']}, 'Africa': {'Egypt': ['Cairo']} }
 # 1
 def sortUSA():
-    s = []
-    s= locations['North America']['USA']
-    s.sort()
-    return(s)
+    array = locations['North America']['USA']
+    return sorted(array)
 
-# 2
+#2
+
 def alphaAsia():
-    l= []
-    res = []
-    l=locations['Asia'].values()
-    for i in l :
-        res.extend(i)
-    res.sort()
-    return res
-
-
+    result = []
+    for item in locations['Asia']:
+        for country in locations['Asia'][item]:
+            result.append(country + ' - ' + item)
+    return sorted(result)
 
 
 
