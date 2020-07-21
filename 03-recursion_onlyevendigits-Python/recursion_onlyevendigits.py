@@ -15,15 +15,15 @@ def fun_recursion_onlyevendigits(l):
 def driver(l,n,ind,newl):
 	if(ind >= n):
 		return newl
-	newl.append(string_red(str(l[ind]),len(str(l[ind])),0,""))
+	newl.append(string_red(l[ind],len(str(l[ind])),0,""))
 	return driver(l,n,ind+1,newl)
 
 
 def string_red(s,stlen,stind,news):
 	if(stind>=stlen):
 		return int(news)
-	if(s[stind]%2 == 0):
-		news =news+s[stind]
+	if(int(str(s)[stind])%2 == 0):
+		news =news+str(s[stind])
 
 	return string_red(s,stlen,stind+1,news)
 
