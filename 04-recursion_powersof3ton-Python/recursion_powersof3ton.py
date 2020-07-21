@@ -13,12 +13,12 @@ def recursion_powersof3ton(n):
 
 
 def driver(n,num,l):
-	if(num>=n):
+	if(num>n):
 		return l
 
 	if(1162261467%num == 0):
 		l.append(num)
-	driver(n,num+1,l)
+	return driver(n,num+1,l)
 
 
 
