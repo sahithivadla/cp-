@@ -9,7 +9,7 @@ def hasduplicates(L):
 	for i in range(0,len(L)):
 		for j in range(0,len(L[i])):
 			if(L[i][j] in dup):
-				return False
+				return True
 			else:
 				dup.append(L[i][j])
-	return True
+	return False
