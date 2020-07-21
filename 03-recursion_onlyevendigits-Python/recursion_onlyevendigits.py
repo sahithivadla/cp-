@@ -21,7 +21,7 @@ def driver(l,n,ind,newl):
 
 def string_red(s,stlen,stind,news):
 	if(stind>=stlen):
-		return int(news)
+		return news
 	if(int(s[stind])%2 == 0):
 		news =news+s[stind]
 
