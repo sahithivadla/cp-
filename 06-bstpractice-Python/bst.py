@@ -51,7 +51,7 @@ class BST(object):
 
             self._printSelf(x.left)
 
-            print(x.value)
+            return(x.value)
 
             self._printSelf(x.right)
 
@@ -66,7 +66,6 @@ class BST(object):
         # Your code goes here
 
         if self.root == None or type(find_val) != int:
-
             return False
 
         else :
