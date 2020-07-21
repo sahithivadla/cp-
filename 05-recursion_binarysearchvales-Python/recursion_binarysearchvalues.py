@@ -20,7 +20,7 @@
 def recursion_binarysearchvalues(L, v):
 	# Your codes goes here
 
-	return(driver(L,v,0,len(L),[]))
+	return(driver(L,v,0,len(L)-1,[]))
 
 def driver(L,v,lo,hi,li):
 	if(hi>=lo):
@@ -28,11 +28,13 @@ def driver(L,v,lo,hi,li):
 		li.append((mid,L[mid]))
 
 		if(L[mid] == v):
-			if((mid,L[mid]) not in L):
+			if((mid,L[mid]) not in li):
 				li.append((mid,L[mid]))
 			return(li)
 		elif(ord(L[mid])> ord(v)):
 			return driver(L,v,lo,mid-1,li)
 		else:
 			return driver(L,v,mid+1,hi,li)
+	else:
+		return(li)
 
