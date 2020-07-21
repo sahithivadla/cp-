@@ -13,8 +13,8 @@ def  driver(l,n,ind,s):
 	if(ind>=n):
 		return s
 	if(ind%2==0):
-		sum =sum+l[ind]
+		s =s+l[ind]
 	if(ind%2!=0):
-		sum = sum-l[ind]
-	return (l,len(l),ind+1,sum)
+		s = s-l[ind]
+	return (l,len(l),ind+1,s)
 
