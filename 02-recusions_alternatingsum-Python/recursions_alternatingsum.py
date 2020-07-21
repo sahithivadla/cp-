@@ -14,7 +14,7 @@ def  driver(l,n,ind,s):
 		return s
 	if(ind%2==0):
 		s =s+l[ind]
-	if(ind%2!=0):
+	else:
 		s = s-l[ind]
-	return (l,len(l),ind+1,s)
+	return driver(l,n,ind+1,s)
 
