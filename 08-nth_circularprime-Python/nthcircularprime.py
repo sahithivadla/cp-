@@ -4,7 +4,7 @@
 # numbers resulting from rotating its digits are also prime. The first Circular primes are 2, 3,
 # 5, 7, 11, 13, 17, 31, 37, 71, 73, 79, 97, 113, 131, 197... To see why 197 is a Circular prime,
 # note that 197 is prime, as is 971 (rotated left), as is 719 (rotated left again).
-
+import math
 def isprime(num):
 	if(num < 2):
 		return False
@@ -12,7 +12,7 @@ def isprime(num):
 		return True
 	if(num%2 ==0):
 		return False
-	for i in range(3 ,int(math.sqrt(n))+1,2):
+	for i in range(3 ,int(math.sqrt(num))+1,2):
 		if n%i == 0:
 			return False
 	return True
