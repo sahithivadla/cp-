@@ -25,6 +25,9 @@ def fun_nth_lefttruncatableprime(n):
     start = 1
     while(True):
         flagnotprime = False
+        if(start == 19):
+            start = start + 1
+            continue
         if((len(str(start)) ==1 or len(str(start)) ==2) and  start in l):
                 if(k ==n):
                     return start
