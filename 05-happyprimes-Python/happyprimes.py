@@ -10,7 +10,9 @@
 # However, they also are here specifically because they are just the right helper
 # functions to make nthHappyNumber(n) easier to write!
 
+
 def ishappyprimenumber(n):
     # Your code goes here
+
 
     pass
