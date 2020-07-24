@@ -16,7 +16,7 @@ def fun_nth_uglynumber(n):
     start = 1
     k = 0
     while(True):
-        if(isUgly):
+        if(isUgly(start)):
             if(k == n):
                 return start
             else:
