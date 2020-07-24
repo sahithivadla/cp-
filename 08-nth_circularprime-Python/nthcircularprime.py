@@ -32,7 +32,7 @@ def checkCircular(N) :
 def nthcircularprime(n):
 # 	# Your code goes here
 	start = 1
-	k =0
+	k =1
 	while(True):
 		if(checkCircular(start) == True):
 			if(k == n):
