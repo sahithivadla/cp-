@@ -22,7 +22,7 @@ def isprime(num):
 def fun_nth_lefttruncatableprime(n):
     l =[2,3,5,7,13,17]
     k =0
-    start = 2
+    start = 1
     while(True):
         flagnotprime = False
         if((len(str(start)) ==1 or len(str(start)) ==2) and  start in l):
