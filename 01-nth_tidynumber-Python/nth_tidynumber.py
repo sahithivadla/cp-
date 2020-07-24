@@ -13,7 +13,7 @@ def fun_nth_tidynumber(n):
     while(True):
         s = list(map(int,str(start)))
         s.sort()
-        if(start == int(''.join(map(int,s)))):
+        if(start == int(''.join(map(str,s)))):
             if(k == n):
                 return start
             else:
