@@ -31,17 +31,18 @@ def fun_nth_lefttruncatableprime(n):
                 else:
                     k = k+1
         else:
-            if(isprime(start) == True):
-                s=str(start)
-                for i in range(1,len(s)):
-                    if(isprime(int(s[i:])) == False):
-                        flagnotprime = True
-                        break
-                if(flagnotprime == False):
-                    if(k==n):
-                        return start
-                    else:
-                        k = k+1
+            if(start == 19 or "0" in str(start)):
+                if(isprime(start) == True):
+                    s=str(start)
+                    for i in range(1,len(s)):
+                        if(isprime(int(s[i:])) == False):
+                            flagnotprime = True
+                            break
+                    if(flagnotprime == False):
+                        if(k==n):
+                            return start
+                        else:
+                            k = k+1
         start = start + 1
 
 
