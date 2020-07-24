@@ -49,7 +49,8 @@ def fun_nearestkaprekarnumber(n):
     s = []
     for i in l:
         s.append(abs(i-n))
-    return(l.index(min(s)))
+    a = s.index(min(s))
+    return(l[a])
 
 
 
