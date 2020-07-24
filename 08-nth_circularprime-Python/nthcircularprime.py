@@ -6,10 +6,17 @@
 # note that 197 is prime, as is 971 (rotated left), as is 719 (rotated left again).
 
 def isprime(num):
-	c = 0
-	for i in range(1,num+1):
-		c= c+1
-	return(c==2)
+	if(num < 2):
+		return False
+	if(num == 2):
+		return True
+	if(num%2 ==0):
+		return False
+	for i in range(3 ,int(math.sqrt(n))+1,2):
+		if n%i == 0:
+			return False
+	return True
+
 def checkCircular(N) :
 	if("0" in str(N)):
 		return False
