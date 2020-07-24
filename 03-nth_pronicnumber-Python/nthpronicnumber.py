@@ -4,11 +4,18 @@
 # number n is a product of x and (x+1).
 
 import math
-def nthpronicnumber(n):
-	# Your code goes here
+def ispronic(n):
 	a =1
 	b =1
 	c= -n
-	x1 = (-b +math.sqrt((b*b) - 4*a*c))//(2*a)
+	x1 = abs((-b +math.sqrt((b*b) - 4*a*c))//(2*a))
+	x2  = abs((-b - math.sqrt((b*b) - 4*a*c))//(2*a))
+	if(abs(x1-x2) == 1):
+		return True
+	return False
+
+def nthpronicnumber(n):
+	# Your code goes here
+
 
 	pass
