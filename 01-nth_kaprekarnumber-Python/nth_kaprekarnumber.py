@@ -19,7 +19,7 @@ def iskaprekar(num):
             res1 = 0
         else:
             res1 = int(s[i+1:])
-        if(int(res) + res1 == start):
+        if(int(res) + res1 == num):
             return True
     return False
 
@@ -28,11 +28,14 @@ def fun_nth_kaprekarnumber(n):
     start = 1
     k = 0
     while(True):
-        if(iskaprekar(start) == True):
-            if(k == n):
-                return start
-            else :
-                k = k + 1
+        if(start%10 == 0):
+            continue
+        else:
+            if(iskaprekar(start) == True):
+                if(k == n):
+                    return start
+                else :
+                    k = k + 1
         start = start +1
 
 
