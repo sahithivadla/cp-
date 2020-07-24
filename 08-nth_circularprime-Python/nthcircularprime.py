@@ -13,7 +13,7 @@ def isprime(num):
 def checkCircular(N) :
 	if("0" in str(N)):
 		return False
-	leng = len(str(n))
+	leng = len(str(N))
 	if(leng == 1):
 		if(isprime(N)):
 			return True
