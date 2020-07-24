@@ -43,27 +43,19 @@ def nthcircularprime(n):
 	l = [2,3,5,7]
 	start = 1
 	k =0
-# 	while(True):
-# 		flag = False
-# 		if(len(str(start))== 1 and start in l):
-# 			if(k == n):
-# 				return start
-# 			else:
-# 				k = k + 1
-# 		else:
-# 			if(isprime(start) == True and isprime(int(str(start)[::-1])) == True):
-# 				s = str(start)
-# 				for i in range(0,len(s)-1):
-# 					Lfi= s[0 : 1]
-# 					Lse = s[1 :]
-# 					s = Lse+Lfi
-# 					if(isprime(int(s)) == False):
-# 						flag = True
-# 						break
-# 				if(flag == False):
-# 					if(k == n):
-# 						return start
-# 					else:
-# 						k = k + 1
+	while(True):
+		if(len(str(start))== 1 and start in l):
+			if(k == n):
+				return start
+			else:
+				k = k + 1
+		else:
+			if(checkCircular(start) == True):
+				if(k == n):
+					return start
+				else:
+					k = k + 1
+
+
 
 
