@@ -6,17 +6,20 @@ def div( a, b ):
         a = a / b
     return a
 
-# def isUgly( no ):
-#     no = maxDivide(no, 2)
-#     no = maxDivide(no, 3)
-#     no = maxDivide(no, 5)
-#     return 1 if no == 1 else 0
+def isUgly( no ):
+    no = div(no, 2)
+    no = div(no, 3)
+    no = div(no, 5)
+    if no ==1:
+        return 1
+    else:
+        return 0
 
 def fun_nth_uglynumber(n):
     start = 1
     k = 0
     while(True):
-        if(div(start,2) == 1 or div(start,3) == 1 or div(start,5)== 1):
+        if(isUgly):
             if(k == n):
                 return start
             else:
