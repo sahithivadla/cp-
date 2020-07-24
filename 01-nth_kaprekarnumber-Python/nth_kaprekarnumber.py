@@ -28,14 +28,11 @@ def fun_nth_kaprekarnumber(n):
     start = 1
     k = 0
     while(True):
-        if(start%10 == 0):
-            continue
-        else:
-            if(iskaprekar(start) == True):
-                if(k == n):
-                    return start
-                else :
-                    k = k + 1
+        if((start*start)%100!=0 and iskaprekar(start) == True):
+            if(k == n):
+                return start
+            else :
+                k = k + 1
         start = start +1
 
 
