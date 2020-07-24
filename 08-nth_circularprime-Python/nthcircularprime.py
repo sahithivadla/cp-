@@ -13,7 +13,7 @@ def isprime(num):
 	if(num%2 ==0):
 		return False
 	for i in range(3 ,int(math.sqrt(num))+1,2):
-		if n%i == 0:
+		if num%i == 0:
 			return False
 	return True
 
