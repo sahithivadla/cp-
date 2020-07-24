@@ -11,33 +11,24 @@ def isprime(num):
 		c= c+1
 	return(c==2)
 def checkCircular(N) :
+	if("0" in str(N)):
+		return False
+	leng = len(str(n))
+	if(leng == 1):
+		if(isprime(N)):
+			return True
+		return False
+	i = 0
+	rem = 0
+	while(i<leng):
+		rem = N%10
+		N = N//10
+		N = rem *(10 **(leng -1)) + N
+		if not isprime(N):
+			return False
+		i = i+1
+	return True
 
-    #Count digits.
-    count = 0
-    temp = N
-    while (temp > 0) :
-        count = count + 1
-        temp = temp / 10
-
-    num = N
-    while (isprime(num)) :
-
-        # Following three lines generate the
-        # next circular permutation of a
-        # number. We move last digit to
-        # first position.
-        rem = num % 10
-        div = num / 10
-        num = (int)((math.pow(10, count - 1))
-                                * rem)+ div
-
-        # If all the permutations are checked
-        # and we obtain original number exit
-        # from loop.
-        if (num == N) :
-            return True
-
-    return False
 def nthcircularprime(n):
 # 	# Your code goes here
 	l = [2,3,5,7]
