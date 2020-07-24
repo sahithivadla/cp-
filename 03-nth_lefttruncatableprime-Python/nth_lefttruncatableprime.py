@@ -20,16 +20,16 @@ def isprime(num):
     return False
 
 def fun_nth_lefttruncatableprime(n):
-    l =[2,3,5,7,13,17,19]
+    l =[2,3,5,7,13,17]
     k =0
     start = 2
     while(True):
         flagnotprime = False
         if((len(str(start)) ==1 or len(str(start)) ==2) and  start in l):
-            if(k ==n):
-                return start
-            else:
-                k = k+1
+                if(k ==n):
+                    return start
+                else:
+                    k = k+1
         else:
             if(isprime(start) == True):
                 s=str(start)
@@ -43,6 +43,7 @@ def fun_nth_lefttruncatableprime(n):
                     else:
                         k = k+1
         start = start + 1
+
 
 
 
