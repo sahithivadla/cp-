@@ -12,7 +12,7 @@
 
 def fun_nth_carolprime(n):
     n = n + 2
-    ans = ((2**start -1) **2 -2)
+    ans = ((2**n -1) **2 -2)
     return ans
 
 
