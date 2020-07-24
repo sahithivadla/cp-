@@ -5,7 +5,7 @@
 # Kaprekar numbers are: 1, 9, 45, 55, 99, 297, 703, 999 , 2223, 2728,...
 # With this in mind, write the function nthKaprekarNumber(n) that takes a non-negative int n
 # and returns the nth Kaprekar number, where as usual we start counting at n==0.
-
+import math
 def iskaprekar(num):
     ans =num**2
     s= str(ans)
@@ -25,10 +25,13 @@ def iskaprekar(num):
 
 
 def fun_nth_kaprekarnumber(n):
-    start = 1
-    k = 0
+    if(n == 0):
+        return 1
+    start = 2
+    k = 1
     while(True):
-        if((start*start)%100!=0 and iskaprekar(start) == True):
+        a = math.log10(float(start))- math.floor(math.log10(float(start)))
+        if( a!= 0 and iskaprekar(start) == True):
             if(k == n):
                 return start
             else :
