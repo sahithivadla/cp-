@@ -10,10 +10,7 @@ def isUgly( no ):
     no = div(no, 2)
     no = div(no, 3)
     no = div(no, 5)
-    if no ==1:
-        return 1
-    else:
-        return 0
+    return 1 if no == 1 else 0
 
 def fun_nth_uglynumber(n):
     start = 1
