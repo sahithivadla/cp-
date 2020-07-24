@@ -35,7 +35,7 @@ def nthpowerfulnumber(n):
 	start = 1
 	k= 0
 	while(True):
-		li = primefactors(start)
+		li = primeFactors(start)
 		flagnotpow = False
 		for i in li:
 			if(start%i!=0 and start%(i*i)!=0):
