@@ -16,6 +16,14 @@ def ispronic(n):
 
 def nthpronicnumber(n):
 	# Your code goes here
+	start = 0
+	k =0
+	while(True):
+		if(ispronic(start)):
+			if(k == n):
+				return start
+			k = k+ 1
+		start = start + 1
 
 
 	pass
