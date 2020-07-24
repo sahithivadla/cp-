@@ -7,5 +7,15 @@
 # fun_nth_tidynumber(35) = 46
 
 def fun_nth_tidynumber(n):
-
-    return 0
+    start = 1
+    k = 0
+    s=[]
+    while(True):
+        s = list(map(int,str(start)))
+        s.sort()
+        if(start == int(''.join(map(int,s)))):
+            if(k == n):
+                return start
+            else:
+                k = k +1
+        start = start + 1
