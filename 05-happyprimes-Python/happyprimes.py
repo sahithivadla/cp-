@@ -10,32 +10,34 @@
 # However, they also are here specifically because they are just the right helper
 # functions to make nthHappyNumber(n) easier to write!
 
+def isprime(num):
+    c= 0
+    for i in range(1,num+1):
+        if(num%i == 0):
+            c= c+1
+    if(c==2):
+        return True
+    return False
 
 def ishappyprimenumber(n):
     # Your code goes here
-	n =abs(n)
-	if(n == 1):
-		return True
-	elif(len(str(n))==1):
-		n=n*n
-		while(len(str(n))!=1):
-			if len(str(n)) == 3 :
-				n = int(str(n)[0]) **2 + int(str(n)[1]) **2 + int(str(n)[2]) **2
-			elif  len(str(n)) == 2 :
-				n = int(str(n)[0]) **2 + int(str(n)[1]) **2
-		if(n==1):
-			return True
-		return False
+    if n==1 or n ==7 :
+        return True
+    temp = n
+    sum= n
+    while(sum>9):
+        sum =0
+        while(temp>0):
+            rem = temp%10
+            sum=sum+(rem*rem)
+            temp = temp //10
+        if(sum ==1):
+            return True
+        temp = sum
+    if(sum == 7):
+        return True
+    return False
 
-	else:
-		while(len(str(n))!=1):
-			if len(str(n)) == 3 :
-				n = int(str(n)[0]) **2 + int(str(n)[1]) **2 + int(str(n)[2]) **2
-			elif  len(str(n)) == 2 :
-				n = int(str(n)[0]) **2 + int(str(n)[1]) **2
 
-		if(n==1):
-			return True
-		return False
 
 
