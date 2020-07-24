@@ -9,26 +9,11 @@
 # for primality (and you may need to think about that hint for a while for it to make sense!).
 
 
-def isprime(num):
-    c = 0
-    for i in range(1,num+1):
-        if(num%i == 0):
-            c = c+1
-    if(c == 2):
-        return  True
-    return False
-
 
 def fun_nth_carolprime(n):
-    start = 2
-    k = 0
-    while(True):
-        ans = ((2**start - 1)**2 -2)
-        if(isprime(ans) == True):
-            if(k==n):
-                return ans
-            else:
-                k = k+1
-        start = start + 1
+    n = n + 2
+    ans = ((2**start -1) **2 -2)
+    return ans
 
-    return 0
+
+
