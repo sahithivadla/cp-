@@ -11,4 +11,5 @@ def sumofsquaresofdigit(n):
 		temp = n%10
 		sum = sum + (temp*temp)
 		n= n//10
-	pass
+
+	return(sum)
