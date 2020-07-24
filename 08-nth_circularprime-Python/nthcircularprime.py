@@ -31,21 +31,15 @@ def checkCircular(N) :
 
 def nthcircularprime(n):
 # 	# Your code goes here
-	l = [2,3,5,7]
 	start = 1
 	k =0
 	while(True):
-		if(len(str(start))== 1 and start in l):
+		if(checkCircular(start) == True):
 			if(k == n):
 				return start
 			else:
 				k = k + 1
-		else:
-			if(checkCircular(start) == True):
-				if(k == n):
-					return start
-				else:
-					k = k + 1
+		start = start +1
 
 
 
