@@ -19,8 +19,8 @@ def checkCircular(N) :
         count = count + 1
         temp = temp / 10
 
-    num = N;
-    while (isPrime(num)) :
+    num = N
+    while (isprime(num)) :
 
         # Following three lines generate the
         # next circular permutation of a
