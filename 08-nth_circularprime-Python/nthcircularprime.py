@@ -10,33 +10,60 @@ def isprime(num):
 	for i in range(1,num+1):
 		c= c+1
 	return(c==2)
+def checkCircular(N) :
+
+    #Count digits.
+    count = 0
+    temp = N
+    while (temp > 0) :
+        count = count + 1
+        temp = temp / 10
+
+    num = N;
+    while (isPrime(num)) :
+
+        # Following three lines generate the
+        # next circular permutation of a
+        # number. We move last digit to
+        # first position.
+        rem = num % 10
+        div = num / 10
+        num = (int)((math.pow(10, count - 1))
+                                * rem)+ div
+
+        # If all the permutations are checked
+        # and we obtain original number exit
+        # from loop.
+        if (num == N) :
+            return True
+
+    return False
 def nthcircularprime(n):
-	# Your code goes here
+# 	# Your code goes here
 	l = [2,3,5,7]
 	start = 1
 	k =0
-	while(True):
-		flag = False
-		if(len(str(start))== 1 and start in l):
-			if(k == n):
-				return start
-			else:
-				k = k + 1
-		else:
-			if(isprime(start) == True and isprime(int(str(start)[::-1])) == True):
-				s = str(start)
-				for i in range(0,len(s)-1):
-					Lfi= s[0 : 1]
-					Lse = s[1 :]
-					s = Lse+Lfi
-					if(isprime(int(s)) == False):
-						flag = True
-						break
-				if(flag == False):
-					if(k == n):
-						return start
-					else:
-						k = k + 1
+# 	while(True):
+# 		flag = False
+# 		if(len(str(start))== 1 and start in l):
+# 			if(k == n):
+# 				return start
+# 			else:
+# 				k = k + 1
+# 		else:
+# 			if(isprime(start) == True and isprime(int(str(start)[::-1])) == True):
+# 				s = str(start)
+# 				for i in range(0,len(s)-1):
+# 					Lfi= s[0 : 1]
+# 					Lse = s[1 :]
+# 					s = Lse+Lfi
+# 					if(isprime(int(s)) == False):
+# 						flag = True
+# 						break
+# 				if(flag == False):
+# 					if(k == n):
+# 						return start
+# 					else:
+# 						k = k + 1
 
 
-	pass
