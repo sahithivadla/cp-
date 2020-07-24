@@ -6,32 +6,34 @@
 # With this in mind, write the function nthKaprekarNumber(n) that takes a non-negative int n
 # and returns the nth Kaprekar number, where as usual we start counting at n==0.
 
+def iskaprekar(num):
+    ans =num**2
+    s= str(ans)
+    flag = False
+    res= ""
+    for i in range(0,len(s)):
+        res= res+s[i]
+        if(i == len(s)-2):
+            res1 = int(s[i+1])
+        elif(i == len(s)-1):
+            res1 = 0
+        else:
+            res1 = int(s[i+1:])
+        if(int(res) + res1 == start):
+            return True
+    return False
 
 
 def fun_nth_kaprekarnumber(n):
     start = 1
     k = 0
-    res = ""
     while(True):
-        ans =start**2
-        s= str(ans)
-        flag = False
-        for i in range(0,len(s)):
-            res= res+s[i]
-            if(i == len(s)-2):
-                res1 = int(s[i+1])
-            elif(i == len(s)-1):
-                res1 = 0
-            else:
-                res1 = s[i+1:]
-            if(int(res) + res1 == start):
-                flag = True
-        if(flag == True):
+        if(iskaprekar(start) == True):
             if(k == n):
                 return start
-            else:
-                k = k+1
-        start = start + 1
+            else :
+                k = k + 1
+        start = start +1
 
 
 
@@ -42,4 +44,5 @@ def fun_nth_kaprekarnumber(n):
 
 
 
-    return 1
+
+
