@@ -9,5 +9,27 @@
 
 def longestcommonsubstring(s1, s2):
     # Yourcode goes here
+    if(len(s1) == 0 or len(s2) == 0):
+        return ""
+    if(len(s1)>len(s2)):
+        short = s2
+        longs = s1
+    else:
+        short = s1
+        longs = s2
+    l = []
+    res = ""
+    for i in range(1,len(short)):
+        res = res+short[i]
+        if res in longs:
+            l.append(res)
+        else:
+            res = short[i]
+    if(len(l)==0):
+        return ""
+    else:
+        return max(l,key= len)
 
-    pass
+
+
+
