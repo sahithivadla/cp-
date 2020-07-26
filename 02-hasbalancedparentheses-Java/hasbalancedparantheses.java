@@ -13,19 +13,18 @@ class hasbalancedparantheses {
 		if(s.length() == 0){
 			return true;
 		}
-		int l = 0;
-		int r = 0;
+		int c=0;
 		for(int i = 0;i < s.length();i++){
 			if(s.charAt(i)=='('){
-				l += 1;
+				c += 1;
 			}
 			else{
 				if(s.charAt(i) == ')'){
-					r += 1;
+					c -= 1;
 				}
 			}
 		}
-		if(l == r){
+		if(c==0){
 			return true;
 		}
 		return false;
