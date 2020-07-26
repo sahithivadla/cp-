@@ -13,6 +13,7 @@ def nthwithproperty309(n):
 	while(True):
 		ans = str(pow(start,5))
 		if("0" in ans and "1" in ans and "2" in ans and "3" in ans and "4" in ans and "5" in ans and "6" in ans and "7" in ans and "8" in ans and "9" in ans):
+			print(start)
 			if(k == n):
 				return start
 			else:
